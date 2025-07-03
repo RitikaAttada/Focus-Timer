@@ -1,0 +1,90 @@
+body {
+    background-color:#e5d4ef;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:90vh;
+    flex-direction:column;
+    .container {
+        background-color:#fbe0e0;
+        height:250px;
+        width:350px;
+        border-radius:7px;
+        display:flex;
+        justify-content:center;
+        border:solid;
+        .box{
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            .timer {
+                background-color:#d6e6ff;
+                position:absolute;
+                top:50px;
+                width:260px;
+                margin-top:-10px;
+                border:solid;
+                font-size:4rem;
+                text-align:center;
+                height:130px;
+                display: flex;
+                align-items:center;
+                justify-content:center;
+                border-radius:5px;
+                font-weight:bold;
+
+            }
+            .buttons {
+                display:flex;
+                position:absolute;
+                width:260px;
+                justify-content:space-between;
+                margin-top:10px;
+                top:180px;
+                .reset,.stop {
+                    padding:8px;
+                    width:116px;
+                    border-radius:5px;
+                    border:solid;
+                    background-color:#fff0d4;
+                    cursor:pointer;
+                }
+                .reset:hover, .stop:hover {
+                    background-color:#ffffea;
+                }
+                .reset:active, .stop:active {
+                    background-color:#fff0d4;
+                }
+
+            }
+        }
+    }
+    .start_div{
+        width:350px;
+        border:solid;
+        border-radius:7px;
+        display: flex;
+        .start {
+            flex:1;
+            padding:10px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:1rem;
+            background-color:#d7f9f8;
+            border:none;
+        }
+        .start:hover{
+            background-color:#ffffea;
+        }
+        .start:active {
+            background-color:#d7f9f8;
+        }
+    }
+    .min
+    {
+        margin-top:20px;
+        font-size:1.5rem;
+    }
+}
